@@ -5,18 +5,31 @@
   
 </head>
 <body>
-  <div id="box-left">
-    <p>LEFT BOX</p>
-      <button id="litte box-left">
-        <p>LITTLE BOX</p>
-      </button>
+  <div id="box-move">
+	<style>
+		#box-move {
+			width:35px;
+			height:35px;
+			background-color:red;
+		}
+	</style>
   </div>
   
-  <div id="box-right">
-    <p>RIGHT BOX</p>
-      <button id="litte box-right">
-        <p>LITTLE BOX</p>
-      </button>
+  <div id="box-moved">
+	<style>
+		#box-moved {
+			width:35px;
+			height:35px;
+			background-color:blue;
+			position:absolute;
+			left:990px;
+			top:8px;
+		}
+	</style>
   </div>
+  
+  <button type="button"
+    onclick="document.getElementByID('box-move').style.background-color = 'white' ">  
+    Then Click Me!</button>
 </body>
 </html>
